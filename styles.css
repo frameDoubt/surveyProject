@@ -1,0 +1,44 @@
+body {
+  background-image: url("https://images.pexels.com/photos/1470168/pexels-photo-1470168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  text-shadow: 1px 1px 5px white;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: #ffe699;
+  border: 5px solid #ffd966;
+  border-radius: 5px;
+  margin: 5% 20%;
+  padding: 2%;
+}
+
+form input[type=text], input[type=email], input[type=number], select{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.radio-checkbox-group {
+  display: flex;
+}
+
+.radio-container {
+  width: 20%;
+  border: 3px solid #ffd966;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0.25rem;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

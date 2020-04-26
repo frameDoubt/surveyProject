@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Web Development Survey</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Web Development Survey</h1>
+      <p id="description">Please choose from the options.</p>
+      <form id="survey-form" action="/completed-form-data">
+        <div class="form-group">
+          <label for="name" id="name-label">Name: </label>
+          <input id="name" type="text" placeholder="Enter name here." required>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email: </label>
+          <input id="email" type="email" placeholder="Enter email here." required>
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age: (Optional)</label>
+          <input id="number" type="number" min="1" max="117" placeholder="Enter age here">
+        </div>
+        <div class="form-group">
+          <label for="dropdown" id="dropdown-label">Which is your favorite editor?</label>
+          <select id="dropdown" name="dropdown">
+            <option disabled selected value>Select editor</option>
+            <option value="atom">Atom</option>
+            <option value="bluefish">Bluefish</option>
+            <option value="brackets">Brackets</option>
+            <option value="codelobster">Codelobster</option>
+            <option value="emacs">Emacs</option>
+            <option value="jedit">jEdit</option>
+            <option value="komodo-edit">Komodo Edit</option>
+            <option value="notepad++">Notepad++</option>
+            <option value="sublime-text">Sublime Text</option>
+            <option value="text-wrangler/bbedit">Text Wrangler/BBEdit</option>
+            <option value="vim">Vim</option>
+            <option value="vscode">VSCode</option>
+          </select>
+        </div>
+        <p>What is your favorite web development language? (Choose one.)</p>
+        <div class="radio-checkbox-group">
+          <div class="radio-container">
+            <label for="html-css"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 and CSS3 Logo">
+            HTML & CSS</label>
+            <input type="radio" id="html-css" name="languages" value="html-css">
+          </div>
+          <div class="radio-container">
+            <label for="javascript"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+            JavaScript</label>
+            <input type="radio" id="javascript" name="languages" value="javascript">
+          </div>
+          <div class="radio-container">
+            <label for="java"><img src="https://icon2.cleanpng.com/20180810/cxt/kisspng-oracle-certified-professional-java-se-programmer-c-grails-development-groovy-development-grails-d-5b6dde2478a285.7026776415339269484941.jpg" alt="Java Logo">
+            Java</label>
+            <input type="radio" id="java" name="languages" value="java">
+          </div>
+          <div class="radio-container">
+            <label for="php"><img src="https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1514018785/s8fj6pnmbzf19x0mmuji.png" alt="PHP Logo">
+            PHP</label>
+            <input type="radio" id="php" name="languages" value="php">
+          </div>
+          <div class="radio-container">
+            <label for="c-sharp"><img src="https://f0.pngfuel.com/png/520/669/c-logo-png-clip-art.png">
+            C#</label>
+            <input type="radio" id="c-sharp" name="languages" value="c-sharp">
+          </div>
+        </div>
+      <p>What is your favorite framework for web development?</p>
+      <div class="checkbox-container">
+        <div="">
+        </div>
+      </div>
+      </form>
+    </main>
+  </body>
+</html>
