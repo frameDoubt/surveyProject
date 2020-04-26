@@ -21,8 +21,8 @@
           <input id="email" type="email" placeholder="Enter email here." required>
         </div>
         <div class="form-group">
-          <label for="number" id="number-label">Age: (Optional)</label>
-          <input id="number" type="number" min="1" max="117" placeholder="Enter age here">
+          <label for="number" id="number-label">Age: </label>
+          <input id="number" type="number" min="1" max="117" placeholder="Enter age here. (Optional)">
         </div>
         <div class="form-group">
           <label for="dropdown" id="dropdown-label">Which is your favorite editor?</label>
@@ -42,7 +42,7 @@
             <option value="vscode">VSCode</option>
           </select>
         </div>
-        <p>What is your favorite web development language? (Choose one.)</p>
+        <p>What is your favorite web development language? (Choose one)</p>
         <div class="radio-checkbox-group">
           <div class="radio-container">
             <label for="html-css"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 and CSS3 Logo">
@@ -71,10 +71,35 @@
           </div>
         </div>
       <p>What is your favorite framework for web development?</p>
-      <div class="checkbox-container">
-        <div="">
+      <div class="radio-checkbox-group">
+        <div class="radio-container">
+          <label for="angular"><img src="https://angular.io/assets/images/logos/angular/angular.png" alt="Angular Logo">Angular</label>
+          <input type="checkbox" id="angular" name="framework" value="angular">
+        </div>
+        <div class="radio-container">
+          <label for="blazor"><img src="https://miro.medium.com/max/1000/0*FUPi7FZm9vWL3A2n.png" alt="Blazor Logo">Blazor</label>
+          <input type="checkbox" id="blazor" name="framework" value="blazor">
+        </div>
+        <div class="radio-container">
+          <label for="ember"><img src="https://pbs.twimg.com/profile_images/581248794072739840/VL8Wc488.png" alt="Ember Logo">Ember</label>
+          <input type="checkbox" id="ember" name="framework" value="ember">
+        </div>
+        <div class="radio-container">
+          <label for="express"><img src="https://pngimage.net/wp-content/uploads/2018/05/express-js-png-5.png" alt="Express Logo">Express.js</label>
+          <input type="checkbox" id="express" name="framework" value="express">
+        </div>
+        <div class="radio-container">
+          <label for="vue"><img src="https://stikka.io/44-large_default/vuejs-logo-sticker.jpg" alt="Vue Logo">Vue.js</label>
+          <input type="checkbox" id="vue" name="framework" value="vue">
         </div>
       </div>
+      <br>
+      <div>
+        <label for="additional-comments">If you have any additional comments.</label>
+        <textarea id="additional-comments" name="additional-comments" rows="10" placeholder="Please leave additional comments here."></textarea>
+      </div>
+      <br>
+      <button type="submit" id="submit">Submit Form</button>
       </form>
     </main>
   </body>
