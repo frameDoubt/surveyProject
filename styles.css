@@ -44,7 +44,7 @@ form input[type=text], input[type=email], input[type=number], select, textarea{
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
